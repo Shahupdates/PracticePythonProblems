@@ -4,9 +4,19 @@ import os
 app = Flask(__name__)
 
 # Route to serve the problem files
-@app.route('/<difficulty>/problem<problem_number>.py')
+@app.route('/<difficulty>/problem<int:problem_number>.py')
 def serve_file(difficulty, problem_number):
-    filename = f"problem{problem_number}.py"
+    if difficulty == 'easy':
+        filename = f"problem{problem_number}.py"
+    elif difficulty == 'medium':
+        filename = f"problem{problem_number + 21}.py"
+    elif difficulty == 'hard':
+        filename = f"problem{problem_number + 42}.py"
+    elif difficulty == 'extreme':
+        filename = f"problem{problem_number + 63}.py"
+    else:
+        return 'Invalid difficulty level.'
+
     folder_path = os.path.join('practicepythonproblems', difficulty)
     return send_from_directory(folder_path, filename)
 
