@@ -9,5 +9,10 @@ def serve_file(difficulty, filename):
     folder_path = os.path.join('practicepythonproblems', difficulty)
     return send_from_directory(folder_path, filename)
 
+# Route handler for the root URL ("/")
+@app.route('/')
+def serve_index():
+    return send_from_directory('.', 'index.html')
+
 if __name__ == '__main__':
     app.run()
