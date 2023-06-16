@@ -1,9 +1,9 @@
-from flask import Flask, render_template_string, send_from_directory
+from flask import Flask, Response
 import os
+import glob
 
 app = Flask(__name__)
 
-# Route to serve the problem files
 @app.route('/<difficulty>/problem<int:problem_number>.py')
 def serve_file(difficulty, problem_number):
     if difficulty == 'easy':
@@ -17,18 +17,32 @@ def serve_file(difficulty, problem_number):
     else:
         return 'Invalid difficulty level.'
 
-    folder_path = os.path.join('practicepythonproblems', difficulty)
-    try:
-        with open(os.path.join(folder_path, filename), 'r') as file:
-            content = file.read()
-        return render_template_string('<pre>{{content}}</pre>', content=content)
-    except FileNotFoundError:
-        return 'File not found.'
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    folder_path = os.path.join(script_dir, difficulty)  # Removed 'practicepythonproblems' here
 
-# Route handler for the root URL ("/")
+    # Print the files in the directory
+    print(f"Files in {folder_path}:")
+    print(glob.glob(os.path.join(folder_path, '*.py')))
+
+    full_path = os.path.join(folder_path, filename)
+
+    try:
+        with open(full_path, 'r') as file:
+            content = file.read()
+        return Response(content, mimetype='text/plain')
+    except FileNotFoundError:
+        return f"File not found at path: {full_path}"
+
 @app.route('/')
 def serve_index():
-    return send_from_directory('.', 'index.html')
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    full_path = os.path.join(script_dir, 'index.html')
+    try:
+        with open(full_path, 'r') as file:
+            content = file.read()
+        return Response(content, mimetype='text/html')
+    except FileNotFoundError:
+        return "File not found."
 
 if __name__ == '__main__':
     app.run(debug=True)
