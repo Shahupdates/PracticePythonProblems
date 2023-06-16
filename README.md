@@ -21,7 +21,7 @@ To get started, follow these steps:
 
 7. Once you are satisfied with your solution, you can submit a pull request to the main repository if you would like to contribute your solution or discuss it with others.
 
-# Easy Section
+# Easy Problems 
 Problem 1: Sum of Two Numbers
 Problem Description: Write a program that takes two numbers as input and prints their sum.
 Solution (problem1.py):
@@ -102,7 +102,7 @@ Problem 20: Count the Occurrences of an Element in a List
 Problem Description: Write a program that takes a list of elements and an element as input, and counts the number of occurrences of that element in the list.
 Solution (problem20.py):
 
-# Medium Section
+# Medium Problems
 
 Problem 21: Validate Email Address
 Problem Description: Write a program that takes an email address as input and validates whether it is a valid email address format or not.
@@ -184,7 +184,7 @@ Problem 40: Find the Largest Prime Factor of a Number
 Problem Description: Write a program that takes a number as input and finds the largest prime factor of that number.
 Solution (problem40.py):
 
-#Hard problems
+# Hard problems
 
 Problem 41: Check if a Number is a Strong Number
 Problem Description: Write a program that takes a number as input and checks whether it is a strong number or not. A strong number is a number that is equal to the sum of the factorial of its digits.
@@ -265,6 +265,210 @@ Solution (problem59.py):
 Problem 60: Calculate the Edit Distance between Two Strings
 Problem Description: Write a program that takes two strings as input and calculates the edit distance between the two strings. The edit distance is the minimum number of operations (insertion, deletion, or substitution) required to transform one string into another.
 Solution (problem60.py):
+
+# Extreme Problems
+
+Problem 61: Find the Longest Common Subsequence
+Problem Description: Write a program that takes two strings as input and finds the length of the longest common subsequence between the two strings.
+Solution (problem61.py):
+
+
+Problem 62: Find the Longest Palindromic Substring
+Problem Description: Write a program that takes a string as input and finds the longest palindromic substring within the string.
+Solution (problem62.py):
+
+Problem 63: Calculate the Minimum Cost Path in a Matrix
+Problem Description: Write a program that takes a matrix of numbers and finds the minimum cost path from the top-left corner to the bottom-right corner. The cost of a path is the sum of the numbers along the path.
+Solution (problem63.py):
+
+Problem 64: Find the Number of Islands
+Problem Description: Write a program that takes a grid of 0's and 1's as input and finds the number of islands. An island is a group of connected 1's, where connectivity is defined by horizontally or vertically adjacent 1's.
+Solution (problem64.py):
+
+Problem 65: Find the Longest Increasing Path in a Matrix
+Problem Description: Write a program that takes a matrix of numbers as input and finds the length of the longest increasing path within the matrix. A path is considered increasing if each number along the path is strictly greater than the previous number.
+Solution (problem65.py):
+
+Problem 66: Find the Number of Islands II
+Problem Description: Write a program that takes a grid of 0's and 1's as input and a list of positions where the value changes to 1. For each position, find the number of islands after the change. An island is a group of connected 1's, where connectivity is defined by horizontally or vertically adjacent 1's.
+Solution (problem66.py):
+
+Problem 67: Find the Maximum XOR of Two Numbers in an Array
+Problem Description: Write a program that takes an array of integers as input and finds the maximum XOR value of any two numbers in the array.
+Solution (problem67.py):
+
+Problem 68: Count the Number of Valid Sudoku Boards
+Problem Description: Write a program that takes a 9x9 Sudoku board as input and counts the number of valid Sudoku boards. A valid Sudoku board must satisfy the following rules:
+Each row contains the digits 1-9 without repetition.
+Each column contains the digits 1-9 without repetition.
+Each of the nine 3x3 sub-grids contains the digits 1-9 without repetition.
+Solution (problem68.py):
+
+Problem 69: Find the Kth Largest Element in an Array
+Problem Description: Write a program that takes an array of integers and an integer k as input, and finds the kth largest element in the array.
+Solution (problem69.py):
+
+Problem 70: Find the Median of Two Sorted Arrays
+Problem Description: Write a program that takes two sorted arrays as input and finds the median of the two arrays.
+Solution (problem70.py):
+
+Problem 71: Implement a Stack using Queues
+Problem Description: Implement a stack data structure using queues. The stack should support the following operations: push, pop, top, and empty.
+Solution (problem71.py):
+
+Problem 72: Count the Number of Submatrices Summing to Target
+Problem Description: Write a program that takes a matrix of numbers and an integer target as input, and counts the number of submatrices whose sum is equal to the target.
+Solution (problem72.py):
+
+Problem 73: Find the K Closest Points to the Origin
+Problem Description: Write a program that takes a list of points (coordinates) in a 2D plane and an integer k as input, and finds the k closest points to the origin. The distance between two points (x1, y1) and (x2, y2) is given by the formula: distance = sqrt((x2 - x1)^2 + (y2 - y1)^2).
+Solution (problem73.py):
+
+Problem 74: Check if a Binary Tree is Balanced
+Problem Description: Write a program that takes the root of a binary tree as input and checks whether the binary tree is balanced. A binary tree is balanced if the heights of its left and right subtrees differ by at most 1.
+Solution (problem74.py):
+
+Problem 75: Serialize and Deserialize a Binary Tree
+Problem Description: Write a program that takes the root of a binary tree as input and performs the following operations:
+Serialize the binary tree into a string representation.
+Deserialize the string representation back into a binary tree.
+Solution (problem75.py):
+
+
+Problem 76: Find the Longest Increasing Subsequence
+Problem Description: Write a program that takes a list of integers as input and finds the length of the longest increasing subsequence within the list.
+Solution (problem76.py):
+
+
+Problem 77: Calculate the Minimum Window Substring
+Problem Description: Write a program that takes two strings as input, a larger string and a smaller string, and finds the minimum window substring of the larger string that contains all the characters of the smaller string.
+Solution (problem77.py):
+
+Problem 78: Find the Duplicate Number
+Problem Description: Write a program that takes a list of integers as input, where the list contains integers in the range 1 to n, and finds the duplicate number in the list.
+Solution (problem78.py):
+
+Problem 79: Find the First Missing Positive
+Problem Description: Write a program that takes a list of integers as input and finds the first missing positive integer. The missing integer should be in the range of 1 to n+1, where n is the length of the list.
+Solution (problem79.py):
+
+Problem 80: Find the Celebrity
+Problem Description: Suppose you are at a party with n people labeled from 0 to n-1. You are given a 2D matrix called knows, where knows[i][j] is True if person i knows person j, and False otherwise. A celebrity is defined as someone who knows no one but is known by everyone else. Write a program that takes the number of people n and the knows matrix as input and finds the celebrity at the party. If there is no celebrity, return -1.
+Solution (problem80.py):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Contributing
