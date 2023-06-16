@@ -33,7 +33,67 @@
   </div>
 
   <script>
-    // JavaScript code goes here
+    // Array of problem files
+    const problems = [
+      { difficulty: "easy", number: 1 },
+      { difficulty: "medium", number: 1 },
+      { difficulty: "hard", number: 1 },
+      { difficulty: "extreme", number: 1 },
+      // Add the rest of the problem objects here
+    ];
+  
+    // Function to handle displaying the popup with the problem code
+    function showPopup(difficulty, number) {
+      const popupContainer = document.getElementById("popupContainer");
+      const pythonCode = document.getElementById("pythonCode");
+  
+      // Set the code in the <pre> element to the content of the file
+      pythonCode.textContent = ""; // Clear the previous code
+      fetch(`/${difficulty}/problem_${number}.py`)
+        .then((response) => response.text())
+        .then((code) => (pythonCode.textContent = code));
+  
+      // Show the popup
+      popupContainer.style.display = "block";
+    }
+  
+    // Function to close the popup
+    function closePopup() {
+      const popupContainer = document.getElementById("popupContainer");
+      popupContainer.style.display = "none";
+    }
+  
+    // Function to generate the table dynamically
+    function generateTable() {
+      const tableBody = document.querySelector("#problemTable tbody");
+  
+      for (let i = 0; i < problems.length; i++) {
+        const problem = problems[i];
+        if (i % 20 === 0) {
+          // Create a new row every 20 problems
+          var newRow = document.createElement("tr");
+          tableBody.appendChild(newRow);
+        }
+  
+        // Create a new cell for each problem
+        var newCell = document.createElement("td");
+        newCell.textContent = `Problem ${i + 1}`;
+  
+        // Add an event listener to show the popup on cell click
+        newCell.addEventListener("click", function () {
+          showPopup(problem.difficulty, problem.number);
+        });
+  
+        newRow.appendChild(newCell);
+      }
+    }
+  
+    // Add event listener to the close button
+    document.getElementById("closeButton").addEventListener("click", closePopup);
+  
+    // Generate the table when the page loads
+    window.addEventListener("DOMContentLoaded", generateTable);
   </script>
+  
 </body>
 </html>
