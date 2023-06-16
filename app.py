@@ -4,8 +4,9 @@ import os
 app = Flask(__name__)
 
 # Route to serve the problem files
-@app.route('/<difficulty>/<filename>')
-def serve_file(difficulty, filename):
+@app.route('/<difficulty>/problem<problem_number>.py')
+def serve_file(difficulty, problem_number):
+    filename = f"problem{problem_number}.py"
     folder_path = os.path.join('practicepythonproblems', difficulty)
     return send_from_directory(folder_path, filename)
 
