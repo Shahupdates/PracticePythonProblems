@@ -21,8 +21,6 @@ To get started, follow these steps:
 
 7. Once you are satisfied with your solution, you can submit a pull request to the main repository if you would like to contribute your solution or discuss it with others.
 
-## Quick learn
-
 # Easy Section
 Problem 1: Sum of Two Numbers
 Problem Description: Write a program that takes two numbers as input and prints their sum.
