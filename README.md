@@ -1,6 +1,6 @@
 # Practice Python Problems
 
-Welcome to the Practice Python Problems repository! This repository is dedicated to providing a collection of Python problems suitable for beginners or those looking to improve their Python skills. The problems included here are designed to be simpler than even the easiest problems found on platforms like LeetCode.
+Welcome to the Practice Python Problems repository! This repository is dedicated to providing a collection of Python problems suitable for beginners or those looking to improve their Python skills. The problems included here range from being designed to be simpler than even the easiest problems found on platforms like LeetCode, to medium level problems, to hard level problems, then to problems even the most advanced leetcoder would have to think twice when completing.
 
 ## How to Use
 
@@ -20,6 +20,93 @@ To get started, follow these steps:
 6. Test your solution using sample inputs provided in the problem description, or create your own test cases to verify its correctness.
 
 7. Once you are satisfied with your solution, you can submit a pull request to the main repository if you would like to contribute your solution or discuss it with others.
+
+## Quick learn
+
+# Easy Section
+Problem 1: Sum of Two Numbers
+Problem Description: Write a program that takes two numbers as input and prints their sum.
+Solution (problem1.py):
+
+Problem 2: Reverse a String
+Problem Description: Write a program that takes a string as input and prints its reverse.
+Solution (problem2.py):
+
+Problem 3: Count Vowels in a String
+Problem Description: Write a program that takes a string as input and counts the number of vowels (a, e, i, o, u) in it.
+Solution (problem3.py):
+
+Problem 4: Check if a Number is Even or Odd
+Problem Description: Write a program that takes a number as input and checks whether it is even or odd.
+Solution (problem4.py):
+
+Problem 5: Calculate the Factorial of a Number
+Problem Description: Write a program that takes a number as input and calculates its factorial.
+Solution (problem5.py):
+
+Problem 6: Check if a String is Palindrome
+Problem Description: Write a program that takes a string as input and checks whether it is a palindrome (reads the same forwards and backwards).
+Solution (problem6.py):
+
+Problem 7: Find the Maximum Number in a List
+Problem Description: Write a program that takes a list of numbers as input and finds the maximum number in the list.
+Solution (problem7.py):
+
+Problem 8: Check if a Year is a Leap Year
+Problem Description: Write a program that takes a year as input and checks whether it is a leap year.
+Solution (problem8.py):
+
+Problem 9: Calculate the Average of a List of Numbers
+Problem Description: Write a program that takes a list of numbers as input and calculates their average.
+Solution (problem9.py):
+
+Problem 10: Find the Square Root of a Number
+Problem Description: Write a program that takes a number as input and calculates its square root.
+Solution (problem10.py):
+
+Problem 11: Generate Fibonacci Series
+Problem Description: Write a program that takes a number as input and generates the Fibonacci series up to that number.
+Solution (problem11.py):
+
+Problem 12: Check if a Number is Prime
+Problem Description: Write a program that takes a number as input and checks whether it is a prime number.
+Solution (problem12.py):
+
+Problem 13: Calculate the Power of a Number
+Problem Description: Write a program that takes a base number and an exponent as input and calculates the power of the base number raised to the exponent.
+Solution (problem13.py):
+
+Problem 14: Check if a String is a Pangram
+Problem Description: Write a program that takes a string as input and checks whether it is a pangram (contains all the letters of the alphabet).
+Solution (problem14.py):
+
+Problem 15: Count Words in a String
+Problem Description: Write a program that takes a string as input and counts the number of words in it.
+Solution (problem15.py):
+
+Problem 16: Find the Smallest Number in a List
+Problem Description: Write a program that takes a list of numbers as input and finds the smallest number in the list.
+Solution (problem16.py):
+
+Problem 17: Check if a String is a Palindrome Number
+Problem Description: Write a program that takes a string as input and checks whether it is a palindrome number (reads the same forwards and backwards).
+Solution (problem17.py):
+
+Problem 18: Calculate the Sum of Digits in a Number
+Problem Description: Write a program that takes a number as input and calculates the sum of its digits.
+Solution (problem18.py):
+
+Problem 19: Reverse a List
+Problem Description: Write a program that takes a list of elements as input and reverses the order of the elements.
+Solution (problem19.py):
+
+Problem 20: Count the Occurrences of an Element in a List
+Problem Description: Write a program that takes a list of elements and an element as input, and counts the number of occurrences of that element in the list.
+Solution (problem20.py):
+
+
+
+
 
 ## Contributing
 
