@@ -102,6 +102,131 @@ Problem 20: Count the Occurrences of an Element in a List
 Problem Description: Write a program that takes a list of elements and an element as input, and counts the number of occurrences of that element in the list.
 Solution (problem20.py):
 
+# Medium Section
+
+Problem 21: Validate Email Address
+Problem Description: Write a program that takes an email address as input and validates whether it is a valid email address format or not.
+Solution (problem21.py):
+
+Problem 22: Find the Second Largest Number in a List
+Problem Description: Write a program that takes a list of numbers as input and finds the second largest number in the list.
+Solution (problem22.py):
+
+Problem 23: Find Common Elements in Lists
+Problem Description: Write a program that takes two lists as input and finds the common elements between them.
+Solution (problem23.py):
+
+Problem 24: Reverse a Sentence
+Problem Description: Write a program that takes a sentence as input and reverses the order of the words in the sentence.
+Solution (problem24.py):
+
+Problem 25: Check if a Number is a Perfect Square
+Problem Description: Write a program that takes a number as input and checks whether it is a perfect square or not.
+Solution (problem25.py):
+
+Problem 26: Find the Union of Two Lists
+Problem Description: Write a program that takes two lists as input and finds the union of the two lists (i.e., all unique elements from both lists).
+Solution (problem26.py):
+
+Problem 27: Find the Longest Word in a Sentence
+Problem Description: Write a program that takes a sentence as input and finds the longest word in the sentence.
+Solution (problem27.py):
+
+Problem 28: Convert Decimal to Binary
+Problem Description: Write a program that takes a decimal number as input and converts it to binary representation.
+Solution (problem28.py):
+
+Problem 29: Find the Common Characters in Strings
+Problem Description: Write a program that takes two strings as input and finds the common characters between them.
+Solution (problem29.py):
+
+Problem 30: Count Words in a Text File
+Problem Description: Write a program that takes the path to a text file as input and counts the number of words in the file.
+Solution (problem30.py):
+
+Problem 31: Find the Mode of a List
+Problem Description: Write a program that takes a list of elements as input and finds the mode (most frequently occurring element) of the list.
+Solution (problem31.py):
+
+Problem 32: Reverse the Order of Words in a Sentence
+Problem Description: Write a program that takes a sentence as input and reverses the order of the words while preserving the order of the characters in each word.
+Solution (problem32.py):
+
+Problem 33: Calculate the Factorial of a Large Number
+Problem Description: Write a program that takes a large number as input and calculates its factorial.
+Solution (problem33.py):
+
+Problem 34: Find the Median of a List
+Problem Description: Write a program that takes a list of numbers as input and finds the median of the list.
+Solution (problem34.py):
+
+Problem 35: Remove Duplicates from a List
+Problem Description: Write a program that takes a list of elements as input and removes any duplicate elements from the list.
+Solution (problem35.py):
+
+Problem 36: Check if a Number is a Perfect Number
+Problem Description: Write a program that takes a number as input and checks whether it is a perfect number or not. A perfect number is a positive integer that is equal to the sum of its proper divisors.
+Solution (problem36.py):
+
+Problem 37: Count the Occurrences of Each Element in a List
+Problem Description: Write a program that takes a list of elements as input and counts the number of occurrences of each element in the list.
+Solution (problem37.py):
+
+Problem 38: Generate Random Password
+Problem Description: Write a program that generates a random password of a specified length. The password should contain a mix of uppercase letters, lowercase letters, digits, and special characters.
+Solution (problem38.py):
+
+Problem 39: Find the Difference between Two Lists
+Problem Description: Write a program that takes two lists as input and finds the elements that are present in the first list but not in the second list.
+Solution (problem39.py):
+
+Problem 40: Find the Largest Prime Factor of a Number
+Problem Description: Write a program that takes a number as input and finds the largest prime factor of that number.
+Solution (problem40.py):
+
+#Hard problems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
