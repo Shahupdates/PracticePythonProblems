@@ -186,49 +186,85 @@ Solution (problem40.py):
 
 #Hard problems
 
+Problem 41: Check if a Number is a Strong Number
+Problem Description: Write a program that takes a number as input and checks whether it is a strong number or not. A strong number is a number that is equal to the sum of the factorial of its digits.
+Solution (problem41.py):
 
+Problem 42: Find the Prime Factors of a Number
+Problem Description: Write a program that takes a number as input and finds all the prime factors of that number.
+Solution (problem42.py):
 
+Problem 43: Sort a List of Strings by Length
+Problem Description: Write a program that takes a list of strings as input and sorts the list in ascending order based on the length of the strings.
+Solution (problem43.py):
 
+Problem 44: Find the GCD of Two Numbers
+Problem Description: Write a program that takes two numbers as input and finds their greatest common divisor (GCD).
+Solution (problem44.py):
 
+Problem 45: Generate the nth Fibonacci Number
+Problem Description: Write a program that takes a number n as input and generates the nth Fibonacci number.
+Solution (problem45.py):
 
+Problem 46: Reverse a Number
+Problem Description: Write a program that takes a number as input and reverses the digits of the number.
+Solution (problem46.py):
 
+Problem 47: Count the Palindrome Substrings in a String
+Problem Description: Write a program that takes a string as input and counts the number of palindrome substrings in the string.
+Solution (problem47.py):
 
+Problem 48: Calculate the Power Set of a Set
+Problem Description: Write a program that takes a set of elements as input and calculates its power set, which is the set of all possible subsets of the given set.
+Solution (problem48.py):
 
+Problem 49: Implement a Binary Search Algorithm
+Problem Description: Write a program that takes a sorted list of numbers and a target number as input and implements the binary search algorithm to find the index of the target number in the list. If the target number is not found, return -1.
+Solution (problem49.py):
 
+Problem 50: Implement Bubble Sort
+Problem Description: Write a program that takes a list of numbers as input and implements the bubble sort algorithm to sort the list in ascending order.
+Solution (problem50.py):
 
+Problem 51: Find the Longest Increasing Subsequence
+Problem Description: Write a program that takes a list of numbers as input and finds the length of the longest increasing subsequence in the list.
+Solution (problem51.py):
 
+Problem 52: Check if a String is a Valid Parenthesis Expression
+Problem Description: Write a program that takes a string as input and checks whether it is a valid parenthesis expression. A valid expression should have matching opening and closing parentheses.
+Solution (problem52.py):
 
+Problem 53: Calculate the Area of a Polygon
+Problem Description: Write a program that takes the coordinates of the vertices of a polygon as input and calculates its area.
+Solution (problem53.py):
 
+Problem 54: Find the Smallest Missing Positive Integer
+Problem Description: Write a program that takes a list of integers as input and finds the smallest missing positive integer that does not appear in the list.
+Solution (problem54.py):
 
+Problem 55: Reverse Words in a Sentence
+Problem Description: Write a program that takes a sentence as input and reverses the order of the words in the sentence.
+Solution (problem55.py):
 
+Problem 56: Find the Intersection of Two Sets
+Problem Description: Write a program that takes two sets as input and finds the intersection of the two sets, i.e., the elements that are common to both sets.
+Solution (problem56.py):
 
+Problem 57: Check if a String is an Anagram
+Problem Description: Write a program that takes two strings as input and checks whether they are anagrams of each other. Anagrams are strings that have the same characters but in a different order.
+Solution (problem57.py):
 
+Problem 58: Calculate the Maximum Subarray Sum
+Problem Description: Write a program that takes a list of integers as input and calculates the maximum sum of a subarray within the list.
+Solution (problem58.py):
 
+Problem 59: Find the Kth Smallest Element in a List
+Problem Description: Write a program that takes a list of numbers and an integer k as input, and finds the kth smallest element in the list.
+Solution (problem59.py):
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Problem 60: Calculate the Edit Distance between Two Strings
+Problem Description: Write a program that takes two strings as input and calculates the edit distance between the two strings. The edit distance is the minimum number of operations (insertion, deletion, or substitution) required to transform one string into another.
+Solution (problem60.py):
 
 
 ## Contributing
