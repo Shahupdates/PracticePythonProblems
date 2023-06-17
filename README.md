@@ -3,28 +3,166 @@
 ![image](https://github.com/Shahupdates/PracticePythonProblems/assets/120000782/11e1c8d3-0f16-4318-b266-9f5500bbfab7)
 
 
-Welcome to the Practice Python Problems repository! This repository is dedicated to providing a collection of Python problems suitable for beginners or those looking to improve their Python skills. The problems included here range from being designed to be simpler than even the easiest problems found on platforms like LeetCode, to medium level problems, to hard level problems, then to problems even the most advanced leetcoder would have to think twice when completing.
+# Practice Python Problems
 
-## How to Use
+Welcome to the Practice Python Problems repository! This repository is dedicated to providing a collection of Python problems suitable for beginners or those looking to improve their Python skills. The problems included here range from being designed to be simpler than even the easiest problems found on platforms like LeetCode, to medium level problems, to hard level problems, and then to problems that even the most advanced leetcoder would have to think twice when completing.
 
-Each problem is organized in its own directory within this repository. Inside each problem directory, you will find a `README.md` file that describes the problem and provides instructions. Additionally, you will find a Python file (`problem.py`) that contains a template for the problem solution. Your task is to complete the solution in the `problem.py` file according to the given instructions.
+## How to Use the Repository
 
-To get started, follow these steps:
+### File Structure
 
-1. Clone the repository to your local machine using the following command: ``` git clone https://github.com/Shahupdates/PracticePythonProblems ```
-2. Navigate to the specific problem directory that you want to work on: ``` cd PracticePythonProblems ```
+The repository is organized into different difficulty levels: easy, medium, hard, and extreme. Each difficulty level has a corresponding folder containing the Python problem files.
 
-3. Read the problem description and instructions provided in the `README.md` file.
+- `easy`: Contains easy-level Python problem files.
+- `medium`: Contains medium-level Python problem files.
+- `hard`: Contains hard-level Python problem files.
+- `extreme`: Contains extreme-level Python problem files.
 
-4. Open the `problem.py` file in your preferred Python editor or IDE.
+### Running the Flask Application
 
-5. Implement your solution within the designated code area. You can also add additional functions or helper classes as needed.
+The `app.py` file in the root directory of the repository contains a Flask application that serves the problem files and an index.html file. The problem files can be accessed through the URL route `/difficulty/problem<number>.py`, where `difficulty` is one of the difficulty levels (easy, medium, hard, extreme), and `number` is the problem number.
 
-6. Test your solution using sample inputs provided in the problem description, or create your own test cases to verify its correctness.
+To run the Flask application, follow these steps:
 
-7. Once you are satisfied with your solution, you can submit a pull request to the main repository if you would like to contribute your solution or discuss it with others.
+1. Install Flask if you haven't already. You can install Flask by running `pip install flask` in your terminal.
 
-# Easy Problems 
+2. Open a terminal or command prompt and navigate to the root directory of the repository.
+
+3. Run the following command to start the Flask application: ``` python app.py ```
+
+
+The Flask application will start running on `http://localhost:5000`.
+
+### Accessing the Problem Files
+
+Once the Flask application is running, you can access the problem files by opening a web browser and navigating to `http://localhost:5000/difficulty/problem<number>.py`, where `difficulty` is one of the difficulty levels (easy, medium, hard, extreme), and `number` is the problem number.
+
+For example, to access the second problem in the easy difficulty level, you would navigate to `http://localhost:5000/easy/problem2.py`.
+
+### Viewing the Problem List
+
+The `index.html` file in the root directory of the repository contains a table that lists all the problems in the repository. Each problem is represented by a clickable cell in the table.
+
+To view the problem list, open a web browser and navigate to `http://localhost:5000` (when the Flask application is running).
+
+Clicking on a problem cell will open a popup displaying the code for that problem.
+
+## Problem List
+
+Here is the list of the 80 problems available in this repository:
+
+Easy Problems
+1. Sum of Two Numbers
+2. Reverse a String
+3. Count Vowels in a String
+4. Check if a Number is Even or Odd
+5. Calculate the Factorial of a Number
+6. Check if a String is Palindrome
+7. Find the Maximum Number in a List
+8. Check if a Year is a Leap Year
+9. Calculate the Average of a List of Numbers
+10. Find the Square Root of a Number
+11. Generate Fibonacci Series
+12. Check if a Number is Prime
+13. Calculate the Power of a Number
+14. Check if a String is a Pangram
+15. Count Words in a String
+16. Find the Smallest Number in a List
+17. Check if a String is a Palindrome Number
+18. Calculate the Sum of Digits in a Number
+19. Reverse a List
+20. Count the Occurrences of an Element in a List
+
+Medium Problems
+21. Validate Email Address
+22. Find the Second Largest Number in a List
+23. Find Common Elements in Lists
+24. Reverse a Sentence
+25. Check if a Number is a Perfect Square
+26. Find the Union of Two Lists
+27. Find the Longest Word in a Sentence
+28. Convert Decimal to Binary
+29. Find the Common Characters in Strings
+30. Count Words in a Text File
+31. Find the Mode of a List
+32. Reverse the Order of Words in a Sentence
+33. Calculate the Factorial of a Large Number
+34. Find the Median of a List
+35. Remove Duplicates from a List
+36. Check if a Number is a Perfect Number
+37. Count the Occurrences of Each Element in a List
+38. Generate Random Password
+39. Find the Difference between Two Lists
+40. Find the Largest Prime Factor of a Number
+
+Hard Problems
+41. Check if a Number is a Strong Number
+42. Find the Prime Factors of a Number
+43. Sort a List of Strings by Length
+44. Find the GCD of Two Numbers
+45. Generate the nth Fibonacci Number
+46. Reverse a Number
+47. Count the Palindrome Substrings in a String
+48. Calculate the Power Set of a Set
+49. Implement a Binary Search Algorithm
+50. Implement Bubble Sort
+51. Find the Longest Increasing Subsequence
+52. Check if a String is a Valid Parenthesis Expression
+53. Calculate the Area of a Polygon
+54. Find the Smallest Missing Positive Integer
+55. Reverse Words in a Sentence
+56. Find the Intersection of Two Sets
+57. Check if a String is an Anagram
+58. Calculate the Maximum Subarray Sum
+59. Find the Kth Smallest Element in a List
+60. Calculate the Edit Distance between Two Strings
+
+Extreme Problems
+61. Find the Longest Common Subsequence
+62. Find the Longest Palindromic Substring
+63. Calculate the Minimum Cost Path in a Matrix
+64. Find the Number of Islands
+65. Find the Longest Increasing Path in a Matrix
+66. Find the Number of Islands II
+67. Find the Maximum XOR of Two Numbers in an Array
+68. Count the Number of Valid Sudoku Boards
+69. Find the Kth Largest Element in an Array
+70. Find the Median of Two Sorted Arrays
+71. Implement a Stack using Queues
+72. Count the Number of Submatrices Summing to Target
+73. Find the K Closest Points to the Origin
+74. Check if a Binary Tree is Balanced
+75. Serialize and Deserialize a Binary Tree
+76. Find the Longest Increasing Subsequence
+77. Calculate the Minimum Window Substring
+78. Find the Duplicate Number
+79. Find the First Missing Positive
+80. Find the Celebrity
+
+## Contributing
+
+If you would like to contribute to this repository, you can do so by adding new problems or improving the existing ones. To contribute, follow these steps:
+
+1. Fork the repository on GitHub.
+
+2. Create a new branch for your changes.
+
+3. Add your new problems or make improvements to the existing ones.
+
+4. Commit and push your changes to your forked repository.
+
+5. Submit a pull request, describing your changes and why they should be merged.
+
+## License
+
+The Practice Python Problems repository is licensed under the [MIT License](LICENSE).
+
+Feel free to use, modify, and distribute the problem files for personal or educational purposes.
+
+## Full problem list with descriptions
+Here is the list of the 80 problems available in this repository:
+
+Easy Problems
 Problem 1: Sum of Two Numbers
 Problem Description: Write a program that takes two numbers as input and prints their sum.
 Solution (problem1.py):
@@ -105,8 +243,7 @@ Problem 20: Count the Occurrences of an Element in a List
 Problem Description: Write a program that takes a list of elements and an element as input, and counts the number of occurrences of that element in the list.
 Solution (problem20.py):
 
-# Medium Problems
-
+Medium Problems
 Problem 21: Validate Email Address
 Problem Description: Write a program that takes an email address as input and validates whether it is a valid email address format or not.
 Solution (problem21.py):
@@ -187,8 +324,7 @@ Problem 40: Find the Largest Prime Factor of a Number
 Problem Description: Write a program that takes a number as input and finds the largest prime factor of that number.
 Solution (problem40.py):
 
-# Hard problems
-
+Hard problems
 Problem 41: Check if a Number is a Strong Number
 Problem Description: Write a program that takes a number as input and checks whether it is a strong number or not. A strong number is a number that is equal to the sum of the factorial of its digits.
 Solution (problem41.py):
@@ -269,12 +405,10 @@ Problem 60: Calculate the Edit Distance between Two Strings
 Problem Description: Write a program that takes two strings as input and calculates the edit distance between the two strings. The edit distance is the minimum number of operations (insertion, deletion, or substitution) required to transform one string into another.
 Solution (problem60.py):
 
-# Extreme Problems
-
+Extreme Problems
 Problem 61: Find the Longest Common Subsequence
 Problem Description: Write a program that takes two strings as input and finds the length of the longest common subsequence between the two strings.
 Solution (problem61.py):
-
 
 Problem 62: Find the Longest Palindromic Substring
 Problem Description: Write a program that takes a string as input and finds the longest palindromic substring within the string.
@@ -301,10 +435,7 @@ Problem Description: Write a program that takes an array of integers as input an
 Solution (problem67.py):
 
 Problem 68: Count the Number of Valid Sudoku Boards
-Problem Description: Write a program that takes a 9x9 Sudoku board as input and counts the number of valid Sudoku boards. A valid Sudoku board must satisfy the following rules:
-Each row contains the digits 1-9 without repetition.
-Each column contains the digits 1-9 without repetition.
-Each of the nine 3x3 sub-grids contains the digits 1-9 without repetition.
+Problem Description: Write a program that takes a 9x9 Sudoku board as input and counts the number of valid Sudoku boards. A valid Sudoku board must satisfy the following rules: Each row contains the digits 1-9 without repetition. Each column contains the digits 1-9 without repetition. Each of the nine 3x3 sub-grids contains the digits 1-9 without repetition.
 Solution (problem68.py):
 
 Problem 69: Find the Kth Largest Element in an Array
@@ -332,16 +463,12 @@ Problem Description: Write a program that takes the root of a binary tree as inp
 Solution (problem74.py):
 
 Problem 75: Serialize and Deserialize a Binary Tree
-Problem Description: Write a program that takes the root of a binary tree as input and performs the following operations:
-Serialize the binary tree into a string representation.
-Deserialize the string representation back into a binary tree.
+Problem Description: Write a program that takes the root of a binary tree as input and performs the following operations: Serialize the binary tree into a string representation. Deserialize the string representation back into a binary tree.
 Solution (problem75.py):
-
 
 Problem 76: Find the Longest Increasing Subsequence
 Problem Description: Write a program that takes a list of integers as input and finds the length of the longest increasing subsequence within the list.
 Solution (problem76.py):
-
 
 Problem 77: Calculate the Minimum Window Substring
 Problem Description: Write a program that takes two strings as input, a larger string and a smaller string, and finds the minimum window substring of the larger string that contains all the characters of the smaller string.
@@ -357,146 +484,5 @@ Solution (problem79.py):
 
 Problem 80: Find the Celebrity
 Problem Description: Suppose you are at a party with n people labeled from 0 to n-1. You are given a 2D matrix called knows, where knows[i][j] is True if person i knows person j, and False otherwise. A celebrity is defined as someone who knows no one but is known by everyone else. Write a program that takes the number of people n and the knows matrix as input and finds the celebrity at the party. If there is no celebrity, return -1.
-Solution (problem80.py):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Contributing
-
-Contributions to this repository are welcome! If you have a new problem or a solution to an existing problem that you would like to share, please follow these steps:
-
-1. Fork the repository to your GitHub account.
-
-2. Create a new branch for your contribution: ``` git checkout -b new-branch-name ```
-
-3. Add your problem or solution to the appropriate directory, following the structure and naming conventions used in this repository.
-
-4. Commit and push your changes to your forked repository.
-
-5. Submit a pull request to the main repository, explaining the purpose of your contribution and any relevant details.
-
-Please ensure that your contributions align with the goal of providing easy Python problems suitable for beginners.
-
-## Feedback and Support
-
-If you have any feedback, suggestions, or questions about this repository, please feel free to open an issue or reach out to the repository maintainer.
-
-## Disclaimer
-
-The problems provided in this repository are created to facilitate Python practice and learning. While efforts have been made to ensure the correctness of the problem descriptions and solutions, there may still be errors or suboptimal solutions. Therefore, it is always recommended to verify the correctness and efficiency of any code before relying on it in a production environment.
-
-Happy coding!
+Solution (problem80.py).
 
