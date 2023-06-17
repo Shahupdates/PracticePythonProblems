@@ -51,93 +51,30 @@ Clicking on a problem cell will open a popup displaying the code for that proble
 
 Here is the list of the 80 problems available in this repository:
 ```
-Easy Problems
-1. Sum of Two Numbers
-2. Reverse a String
-3. Count Vowels in a String
-4. Check if a Number is Even or Odd
-5. Calculate the Factorial of a Number
-6. Check if a String is Palindrome
-7. Find the Maximum Number in a List
-8. Check if a Year is a Leap Year
-9. Calculate the Average of a List of Numbers
-10. Find the Square Root of a Number
-11. Generate Fibonacci Series
-12. Check if a Number is Prime
-13. Calculate the Power of a Number
-14. Check if a String is a Pangram
-15. Count Words in a String
-16. Find the Smallest Number in a List
-17. Check if a String is a Palindrome Number
-18. Calculate the Sum of Digits in a Number
-19. Reverse a List
-20. Count the Occurrences of an Element in a List
+| Problem List                                   |                   |                   |
+| --------------------------------------------- | ----------------- | ----------------- |
+| **Easy Problems**                             | **Medium Problems** | **Hard Problems** |
+| 1. Sum of Two Numbers                          | 21. Validate Email Address | 41. Check if a Number is a Strong Number |
+| 2. Reverse a String                            | 22. Find the Second Largest Number | 42. Find the Prime Factors of a Number |
+| 3. Count Vowels in a String                    | 23. Find Common Elements in Lists | 43. Sort a List of Strings by Length |
+| 4. Check if a Number is Even or Odd            | 24. Reverse a Sentence | 44. Find the GCD of Two Numbers |
+| 5. Calculate the Factorial of a Number         | 25. Check if a Number is a Perfect Square | 45. Generate the nth Fibonacci Number |
+| 6. Check if a String is Palindrome             | 26. Find the Union of Two Lists | 46. Reverse a Number |
+| 7. Find the Maximum Number in a List           | 27. Find the Longest Word in a Sentence | 47. Count the Palindrome Substrings in a String |
+| 8. Check if a Year is a Leap Year              | 28. Convert Decimal to Binary | 48. Calculate the Power Set of a Set |
+| 9. Calculate the Average of a List of Numbers  | 29. Find the Common Characters in Strings | 49. Implement a Binary Search Algorithm |
+| 10. Find the Square Root of a Number           | 30. Count Words in a Text File | 50. Implement Bubble Sort |
+| 11. Generate Fibonacci Series                  | 31. Find the Mode of a List | 51. Find the Longest Increasing Subsequence |
+| 12. Check if a Number is Prime                 | 32. Reverse the Order of Words in a Sentence | 52. Check if a String is a Valid Parenthesis Expression |
+| 13. Calculate the Power of a Number            | 33. Calculate the Factorial of a Large Number | 53. Calculate the Area of a Polygon |
+| 14. Check if a String is a Pangram             | 34. Find the Median of a List | 54. Find the Smallest Missing Positive Integer |
+| 15. Count Words in a String                    | 35. Remove Duplicates from a List | 55. Reverse Words in a Sentence |
+| 16. Find the Smallest Number in a List          | 36. Check if a Number is a Perfect Number | 56. Find the Intersection of Two Sets |
+| 17. Check if a String is a Palindrome Number   | 37. Count the Occurrences of Each Element in a List | 57. Check if a String is an Anagram |
+| 18. Calculate the Sum of Digits in a Number    | 38. Generate Random Password | 58. Calculate the Maximum Subarray Sum |
+| 19. Reverse a List                             | 39. Find the Difference between Two Lists | 59. Find the Kth Smallest Element in a List |
+| 20. Count the Occurrences of an Element in a List | 40. Find the Largest Prime Factor of a Number | 60. Calculate the Edit Distance between Two Strings |
 
-Medium Problems
-21. Validate Email Address
-22. Find the Second Largest Number in a List
-23. Find Common Elements in Lists
-24. Reverse a Sentence
-25. Check if a Number is a Perfect Square
-26. Find the Union of Two Lists
-27. Find the Longest Word in a Sentence
-28. Convert Decimal to Binary
-29. Find the Common Characters in Strings
-30. Count Words in a Text File
-31. Find the Mode of a List
-32. Reverse the Order of Words in a Sentence
-33. Calculate the Factorial of a Large Number
-34. Find the Median of a List
-35. Remove Duplicates from a List
-36. Check if a Number is a Perfect Number
-37. Count the Occurrences of Each Element in a List
-38. Generate Random Password
-39. Find the Difference between Two Lists
-40. Find the Largest Prime Factor of a Number
-
-Hard Problems
-41. Check if a Number is a Strong Number
-42. Find the Prime Factors of a Number
-43. Sort a List of Strings by Length
-44. Find the GCD of Two Numbers
-45. Generate the nth Fibonacci Number
-46. Reverse a Number
-47. Count the Palindrome Substrings in a String
-48. Calculate the Power Set of a Set
-49. Implement a Binary Search Algorithm
-50. Implement Bubble Sort
-51. Find the Longest Increasing Subsequence
-52. Check if a String is a Valid Parenthesis Expression
-53. Calculate the Area of a Polygon
-54. Find the Smallest Missing Positive Integer
-55. Reverse Words in a Sentence
-56. Find the Intersection of Two Sets
-57. Check if a String is an Anagram
-58. Calculate the Maximum Subarray Sum
-59. Find the Kth Smallest Element in a List
-60. Calculate the Edit Distance between Two Strings
-
-Extreme Problems
-61. Find the Longest Common Subsequence
-62. Find the Longest Palindromic Substring
-63. Calculate the Minimum Cost Path in a Matrix
-64. Find the Number of Islands
-65. Find the Longest Increasing Path in a Matrix
-66. Find the Number of Islands II
-67. Find the Maximum XOR of Two Numbers in an Array
-68. Count the Number of Valid Sudoku Boards
-69. Find the Kth Largest Element in an Array
-70. Find the Median of Two Sorted Arrays
-71. Implement a Stack using Queues
-72. Count the Number of Submatrices Summing to Target
-73. Find the K Closest Points to the Origin
-74. Check if a Binary Tree is Balanced
-75. Serialize and Deserialize a Binary Tree
-76. Find the Longest Increasing Subsequence
-77. Calculate the Minimum Window Substring
-78. Find the Duplicate Number
-79. Find the First Missing Positive
-80. Find the Celebrity
 ```
 ## Contributing
 
