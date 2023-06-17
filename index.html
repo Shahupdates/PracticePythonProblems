@@ -183,8 +183,8 @@
 
       for (let i = 0; i < problems.length; i++) {
         const problem = problems[i];
-        if (i % 20 === 0) {
-          // Create a new row every 20 problems
+        if (i % 5 === 0) { // Change this line to create a new row every 10 problems
+          // Create a new row every 10 problems
           var newRow = document.createElement("tr");
           tableBody.appendChild(newRow);
         }
@@ -201,6 +201,7 @@
         newRow.appendChild(newCell);
       }
     }
+
 
     // Add event listener to the close button
     document.getElementById("closeButton").addEventListener("click", closePopup);
