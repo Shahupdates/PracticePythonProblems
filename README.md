@@ -1,5 +1,7 @@
 # Practice Python Problems
 ![Program](https://i.gyazo.com/4ce64545b256362b3082c5362fae0a86.png)
+![image](https://github.com/Shahupdates/PracticePythonProblems/assets/120000782/11e1c8d3-0f16-4318-b266-9f5500bbfab7)
+
 
 Welcome to the Practice Python Problems repository! This repository is dedicated to providing a collection of Python problems suitable for beginners or those looking to improve their Python skills. The problems included here range from being designed to be simpler than even the easiest problems found on platforms like LeetCode, to medium level problems, to hard level problems, then to problems even the most advanced leetcoder would have to think twice when completing.
 
