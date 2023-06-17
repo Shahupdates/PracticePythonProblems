@@ -126,43 +126,40 @@
     function splitMultilineComments(code) {
       const maxLineLength = 80; // Maximum length for a line
       const lines = code.split("\n");
+      let inMultilineComment = false;
+      let newLines = [];
 
       for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].trim();
+        const line = lines[i];
 
-        if (line.startsWith("#")) {
-          const comment = line.slice(1).trim();
+        if (line.trim().startsWith('"""') || line.trim().startsWith("'''")) {
+          inMultilineComment = !inMultilineComment;
+          newLines.push(line);
+          continue;
+        }
 
-          if (comment.length > maxLineLength) {
-            const indent = line.match(/^\s*/)[0];
-            const words = comment.split(" ");
-            let currentLine = `${indent}#`;
-            let lineLength = indent.length + 1;
+        if (inMultilineComment) {
+          let words = line.split(" ");
+          let currentLine = "";
 
-            for (let j = 0; j < words.length; j++) {
-              const word = words[j];
-              const wordLength = word.length;
-
-              if (lineLength + wordLength <= maxLineLength) {
-                currentLine += ` ${word}`;
-                lineLength += wordLength + 1;
-              } else {
-                lines[i] = currentLine;
-                currentLine = `${indent}# ${word}`;
-                lineLength = indent.length + 2;
-                i++;
-              }
-            }
-
-            if (currentLine !== `${indent}#`) {
-              lines[i] = currentLine;
+          while (words.length > 0) {
+            if ((currentLine + words[0]).length <= maxLineLength) {
+              currentLine += words[0] + " ";
+              words = words.slice(1);
+            } else {
+              newLines.push(currentLine);
+              currentLine = "";
             }
           }
+          newLines.push(currentLine);
+        } else {
+          newLines.push(line);
         }
       }
 
-      return lines.join("\n");
+      return newLines.join("\n");
     }
+
 
 
     // Function to close the popup
