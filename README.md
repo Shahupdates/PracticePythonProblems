@@ -50,7 +50,7 @@ Clicking on a problem cell will open a popup displaying the code for that proble
 ## Problem List
 
 Here is the list of the 80 problems available in this repository:
-
+```
 Easy Problems
 1. Sum of Two Numbers
 2. Reverse a String
@@ -138,7 +138,7 @@ Extreme Problems
 78. Find the Duplicate Number
 79. Find the First Missing Positive
 80. Find the Celebrity
-
+```
 ## Contributing
 
 If you would like to contribute to this repository, you can do so by adding new problems or improving the existing ones. To contribute, follow these steps:
