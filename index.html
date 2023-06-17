@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
   <title>Python Problems</title>
   <style>
     /* Add CSS styling here to customize the appearance of the table and popup */
   </style>
 </head>
 <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
   <table id="problemTable">
     <thead>
       <tr>
@@ -28,19 +31,21 @@
   <div id="popupContainer" style="display: none;">
     <div id="popupContent">
       <button id="closeButton">X</button>
-      <pre id="pythonCode"></pre>
+      <pre id="pythonCode"><code class="language-python"></code></pre>
     </div>
   </div>
 
   <script>
     // Array of problem files
-    const problems = [
-      { difficulty: "easy", number: 1 },
-      { difficulty: "medium", number: 1 },
-      { difficulty: "hard", number: 1 },
-      { difficulty: "extreme", number: 1 },
-      // Add the rest of the problem objects here
-    ];
+    const problems = [];
+
+    // Filling the problems array with the problem details
+    const difficulties = ["easy", "medium", "hard", "extreme"];
+    for (let i = 0; i < difficulties.length; i++) {
+      for (let j = 1; j <= 20; j++) {
+        problems.push({ difficulty: difficulties[i], number: j });
+      }
+    }
 
     // Function to handle displaying the popup with the problem code
     function showPopup(difficulty, number) {
@@ -51,7 +56,10 @@
       pythonCode.textContent = ""; // Clear the previous code
       fetch(`/${difficulty}/problem${number}.py`)
         .then((response) => response.text())
-        .then((code) => (pythonCode.textContent = code));
+        .then((code) => {
+          // Use Prism to highlight the code
+          pythonCode.innerHTML = `<code class="language-python">${Prism.highlight(code, Prism.languages.python, 'python')}</code>`;
+        });
 
       // Show the popup
       popupContainer.style.display = "block";
