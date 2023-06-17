@@ -111,6 +111,9 @@
       fetch(`/${difficulty}/problem${number}.py`)
         .then((response) => response.text())
         .then((code) => {
+          // Split long lines in multiline comments
+          code = splitMultilineComments(code);
+
           // Use Prism to highlight the code
           pythonCode.innerHTML = `<code class="language-python">${Prism.highlight(code, Prism.languages.python, 'python')}</code>`;
         });
@@ -118,6 +121,49 @@
       // Show the popup
       popupContainer.style.display = "block";
     }
+
+    // Function to split long lines in multiline comments
+    function splitMultilineComments(code) {
+      const maxLineLength = 80; // Maximum length for a line
+      const lines = code.split("\n");
+
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+
+        if (line.startsWith("#")) {
+          const comment = line.slice(1).trim();
+
+          if (comment.length > maxLineLength) {
+            const indent = line.match(/^\s*/)[0];
+            const words = comment.split(" ");
+            let currentLine = `${indent}#`;
+            let lineLength = indent.length + 1;
+
+            for (let j = 0; j < words.length; j++) {
+              const word = words[j];
+              const wordLength = word.length;
+
+              if (lineLength + wordLength <= maxLineLength) {
+                currentLine += ` ${word}`;
+                lineLength += wordLength + 1;
+              } else {
+                lines[i] = currentLine;
+                currentLine = `${indent}# ${word}`;
+                lineLength = indent.length + 2;
+                i++;
+              }
+            }
+
+            if (currentLine !== `${indent}#`) {
+              lines[i] = currentLine;
+            }
+          }
+        }
+      }
+
+      return lines.join("\n");
+    }
+
 
     // Function to close the popup
     function closePopup() {
